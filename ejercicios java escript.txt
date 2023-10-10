@@ -1,0 +1,240 @@
+Ejercicio 1
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+  let valor1;
+  let valor2;
+  valor1 = prompt('Ingrese primer nimero:');
+  valor2 = prompt('Ingrese segundo numero');
+    let suma = parseInt(valor1) + parseInt(valor2);
+    let producto = parseInt(valor1) * parseInt(valor2);
+  document.write('La suma es ');
+  document.write(suma);
+  document.write('<br>');
+  document.write('El producto es ');
+  document.write(producto);
+  </script>
+</body>
+</html>
+
+Ejercicio2
+
+<IDOCTYPE html>
+  <html>
+  <head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-0">
+  </head>
+  <body>
+  <script>
+  let nombre;
+  let nota;
+  nombre = prompt('Ingrese nombre:');
+  nota = parseInt(prompt('Ingrese su nota:'));
+  if (nota >= 4) {
+  document.write(nombre + ' esta aprobado con un ' + nota);
+  } 
+  </script>
+  </body>
+  </html>
+
+Ejercicio3
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-0">
+  </head>
+  <body>
+    <script>
+    let num1, num2;
+    num1 = parseInt(prompt('Ingrese el primer numero:'));
+    num2 = parseInt(prompt('Ingrese el segundo numero:'));
+    if (num1 > num2) {
+    document.write('el mayor es ' + num1);
+    } else {
+    document.write('el mayor es ' + nun2);
+    }
+    </script>
+  </body>
+  </html>
+
+Ejercicio4
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+      let nota1, nota2, nota3;
+      notal = prompt('Ingrese 1ra. nota:');
+      nota2 = prompt('Ingrese 2da. nota:');
+      nota3 = prompt('Ingrese 3ra. nota:');
+      //Convertimos los 3 string en enteros
+      nota1 = parseInt(nota1);
+      nota2 = parseInt(nota2);
+      nota3 = parseInt(nota3);
+      let pro;
+      pro = (nota1 + nota2 + nota3)/ 3;
+      if (pro >= 7) {
+             document.write('promocionado');
+      } else {
+            if (pro >= 4) {
+            document.write('regular');
+            } else {
+            document.write('reprobado');
+            }
+          }
+      </script>
+  </body>
+  </html>
+
+Ejercicio5
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+    let num1, num2, num3;
+    num1 = prompt('Ingrese primer numero:');
+    num2 = prompt('Ingrese segundo numero:');
+    num3 = prompt('Ingrese tercer numero:');
+      num1 = parseInt(num1);
+      num2 = parseInt(num2);
+      num3 = parseInt(num3);
+        if (num1 > num2 && num1 > num3) {
+        document.write('el mayor es el ' + num1);
+        } else {
+          if (num2 > num3) {
+          document.write('el mayor es el ' + num2);
+          } else {
+          document.write('el mayor es el ' + num3);
+          }
+        }
+    </script>
+  </body>
+  </html>
+
+Ejercicio6
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+    let x;
+    x = 1;
+     while(x <= 100)
+     { document.write(x);
+       document.write('<br>');
+       x = x+1;
+     }
+    </script>
+  </body>
+  </html>
+
+Ejercicio7
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+    let x = 1;
+    let suma = 0;
+    let valor;
+     while(x <= 5)
+     { valor = parseInt(prompt('Ingrese valor'));
+       suma = suma + valor;
+       x = x+1;
+     }
+  document.write('La suma de los valores es '+ suma +'<br>');
+    </script>
+  </body>
+  </html>
+
+Ejercicio8
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+    let valor;
+    do{
+        valor = parseInt(prompt('Ingrese un valor entre 0 y 999:'));
+        document.write('El valor'+ valor +'tiene');
+        if(valor < 10){
+          document.write('Tiene 1 digitos');
+        } else {
+          if(valor < 100){
+            document.write('Tiene 2 digitos');
+          }else{
+            document.write('Tiene 3 digitos'); 
+          }
+        }
+        document.write('<br>');
+     } while(valor != 0);
+    </script>
+  </body>
+  </html>
+
+Ejercicio9
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+   for(let i = 1; i<=10;i++)
+   {document.write(i+ " ");}
+    </script>
+  </body>
+  </html>
+
+Ejercicio10
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+     function mostrarMensaje(){
+      document.write("Cuidado<br>");
+      document.write("Ingrese su documento correctamente<br>");
+     }
+     mostrarMensaje();
+     mostrarMensaje();
+     mostrarMensaje();
+    </script>
+  </body>
+  </html>
